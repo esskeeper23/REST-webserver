@@ -7,7 +7,7 @@ export abstract class TodoDatasource {
     abstract create( createTodoDto: CreateTodoDto ): Promise<TodoEntity>
 
     //todo: paginacion 
-    abstract getAll(): Promise<TodoEntity>
+    abstract getAll(): Promise<TodoEntity[]>
 
     abstract findById( id: number ): Promise<TodoEntity>
     abstract update( updateTodoDto: UpdateTodoDto ): Promise<TodoEntity>
